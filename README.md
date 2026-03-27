@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# TechPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TechPulse** is an intelligent technology aggregation platform designed for software engineers to keep pace with the rapidly evolving tech landscape. It allows users to subscribe to specific technologies (like Java, Python, or React) and receive AI-generated summaries of the latest updates, news, and releases.
 
-Currently, two official plugins are available:
+## What the project does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the frontend web application for the TechPulse platform, built with React and Vite. It provides a highly interactive and performant user interface for developers to consume personalized technology news feeds, engage in community discussions, and interact with an advanced conversational AI for deep-dive explanations of complex topics.
 
-## React Compiler
+## Why the project is useful
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+In an industry with constant updates, TechPulse helps developers combat information fatigue by providing:
 
-## Expanding the ESLint configuration
+- **Personalized Feeds**: Subscribe to your favorite technologies and get a customized news feed.
+- **AI-Powered Summaries**: Quickly understand the essence of long articles and release notes with concise, AI-generated summaries.
+- **Community Discussion**: Engage with other developers in deeply nested forums to discuss the latest trends.
+- **Temporal Reports**: Receive automated weekly, monthly, and yearly digests of technological advancements.
+- **Conversational AI**: Go beyond the summary and ask an intelligent assistant for detailed explanations of complex technical changes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## How users can get started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To get the frontend running locally, follow these steps:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clone the repository:**
+    ```sh
+    git clone <repository-url>
+    cd techpulse
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    This project uses `npm` as its package manager.
+    ```sh
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Run the development server:**
+    This command starts the Vite development server.
+    ```sh
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Other Available Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **Build for production:**
+    ```sh
+    npm run build
+    ```
+-   **Lint the codebase:**
+    ```sh
+    npm run lint
+    ```
+-   **Preview the production build:**
+    ```sh
+    npm run preview
+    ```
+
+## Where users can get help
+
+For support, please open an issue in the GitHub repository. While we don't have a dedicated support team, the community and maintainers will do their best to assist you.
+
+## Who maintains and contributes
+
+This project is maintained by a team of dedicated software engineers. We welcome contributions from the community!
+
+If you are interested in contributing, please read our [contribution guidelines](CONTRIBUTING.md) to get started.
