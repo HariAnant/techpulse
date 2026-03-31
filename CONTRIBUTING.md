@@ -17,10 +17,11 @@ To ensure consistency and quality, we follow these development practices.
 
 ### Branching Strategy
 
-All of our development is based on the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
+We follow a **Trunk-Based Development** strategy. The `main` branch is our trunk and serves as the single source of truth.
 
-1.  **`main` branch:** This is the primary branch, representing the latest stable version of our project. All development branches are created from `main`.
-2.  **Feature Branches:** All new work, whether it's a feature, bugfix, or chore, should be done on a separate branch.
+All work is done on short-lived feature branches that are created from `main` and merged back into it via Pull Requests as quickly as possible.
+
+This approach is a stricter version of GitHub Flow, designed to minimize merge conflicts and enable continuous integration. For the full rationale and details of this decision, please see [ADR-0002: Trunk-Based Development Branching Strategy](./docs/adr/ADR-0002-trunk-based-development.md).
 
 ### Branch Naming Convention
 
