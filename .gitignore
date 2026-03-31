@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables (VERY IMPORTANT - secrets protect karo!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python (backend ke liye)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
