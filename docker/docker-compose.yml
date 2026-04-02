@@ -1,0 +1,19 @@
+# This is a placeholder for your Docker Compose configuration.
+# You can define your services (web, api, ai-service, database, etc.) here.
+
+version: '3.8'
+
+services:
+  # Example service for the web frontend
+  # web:
+  #   build:
+  - #     context: ../apps/web
+  #   ports:
+  #     - "3000:3000"
+
+  # Example service for the backend API
+  # api:
+  #   build:
+  - #     context: ../apps/api
+  #   ports:
+  #     - "8000:8000"
